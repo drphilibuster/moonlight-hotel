@@ -1,0 +1,12 @@
+name: Design question
+description: Something in docs/DESIGN.md that is ambiguous, wrong, or missing
+labels: [design]
+body:
+  - type: input
+    id: section
+    attributes: { label: Design section }
+    validations: { required: true }
+  - type: textarea
+    id: issue
+    attributes: { label: The problem, description: And the final design you propose }
+    validations: { required: true }

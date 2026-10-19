@@ -1,0 +1,15 @@
+The Moonlight Hotel
+Copyright (C) 2026 Moon Technologies LLC — AGPL-3.0-or-later
+
+This repository includes, or will include as the build plan proceeds, the
+third-party works below. Each keeps its original copyright and licence notices.
+The licence audit (tools/licence-audit, report in docs/licensing/) is the
+authoritative inventory and runs in CI; this file summarises it.
+
+Component                     Licence                     Where
+----------------------------  --------------------------  -------------------
+NINJAM (Cockos Incorporated)  GPL-2.0-or-later (audited)  ninjam/
+  incl. WDL subset            Zlib-style (audited)        ninjam/WDL/
+
+Further entries are added by the change that introduces each dependency, and
+the licence gate in CI refuses a dependency missing from the audit's allowlist.
