@@ -2,6 +2,9 @@ name: cla
 
 # Runs on pull_request_target so it can comment and record signatures on pull
 # requests from forks. It never checks out or runs pull request code.
+#
+# Allowlisted: the owner, bots, and "claude" (the Co-Authored-By trailer on
+# commits written with Claude Code under the owner's direction).
 on:
   issue_comment:
     types: [created]
@@ -29,7 +32,7 @@ jobs:
           path-to-signatures: signatures/cla.json
           path-to-document: https://github.com/drphilibuster/moonlight-hotel/blob/main/CLA.md
           branch: cla-signatures
-          allowlist: drphilibuster,dependabot[bot],github-actions[bot]
+          allowlist: drphilibuster,claude,dependabot[bot],github-actions[bot]
           custom-pr-sign-comment: I have read the Moon Technologies LLC CLA and I hereby sign it.
           custom-notsigned-prcomment: >-
             Thanks for your contribution. Before it can be merged, please read the
