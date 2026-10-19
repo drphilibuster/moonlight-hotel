@@ -1,0 +1,4 @@
+# Account and organization IDs from the organization stage's outputs.
+management_account_id  = "000000000000"
+log_archive_account_id = "000000000000"
+organization_id        = "o-xxxxxxxxxx"

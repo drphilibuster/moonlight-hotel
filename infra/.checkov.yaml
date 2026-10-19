@@ -1,0 +1,25 @@
+# SPDX-FileCopyrightText: 2026 Moon Technologies LLC
+# SPDX-License-Identifier: AGPL-3.0-or-later
+#
+# Checks skipped for the whole of infra/, each with the reason. Findings that
+# are deliberate for one resource are skipped inline on that resource instead.
+compact: true
+quiet: true
+framework:
+  - terraform
+skip-check:
+  # Cross-region replication for state and audit buckets: versioning, Object
+  # Lock and the account boundary are the protection; a replica in a second
+  # region would need a second SCP-allowed region for no recovery gain here.
+  - CKV_AWS_144
+  # S3 server access logging: the organization trail records every API call on
+  # these buckets; access logs would only add a second, lossier record.
+  - CKV_AWS_18
+  # S3 event notifications on state and trail buckets: nothing consumes them.
+  - CKV2_AWS_62
+  # "CloudTrail logs to CloudWatch Logs": the trail is queried from S3 (Athena)
+  # when needed; streaming every event to Logs is a standing cost with no reader.
+  - CKV_AWS_252
+  - CKV2_AWS_10
+  # SNS topic for CloudTrail delivery: nothing subscribes.
+  - CKV_AWS_67

@@ -1,0 +1,9 @@
+# Copy to terraform.tfvars (git-ignored) and fill in.
+management_account_id = "000000000000"
+allowed_regions       = ["us-east-1", "eu-west-2", "ap-southeast-2"]
+
+accounts = {
+  "prod"        = { name = "hotel-prod", email = "aws-prod@moonlighthotel.com", ou = "workloads" }
+  "staging"     = { name = "hotel-staging", email = "aws-staging@moonlighthotel.com", ou = "workloads" }
+  "log-archive" = { name = "log-archive", email = "aws-log-archive@moonlighthotel.com", ou = "security" }
+}

@@ -1,0 +1,9 @@
+# One tfvars file per account, e.g. prod.tfvars; apply with -var-file.
+account_id      = "000000000000"
+account_name    = "prod"
+ci_environments = ["prod"]
+
+# For the management account itself:
+#   account_name     = "management"
+#   assume_role_name = null
+#   ci_environments  = []
