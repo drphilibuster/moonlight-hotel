@@ -27,7 +27,7 @@ Your four decisions, now part of the design:
 - **A5. NDI** goes in a helper process (decision 3).
 
 ### "No SaaS" conflicts
-- **A6. AcoustID's web API is a third-party SaaS, and its free tier is non-commercial.** Final design: self-host `acoustid-index` and the AcoustID server code, importing AcoustID's published data dumps on a schedule. Verify the code and data licences in M0.
+- **A6. AcoustID's web API is a third-party SaaS, and its free tier is non-commercial.** Final design (revised by the M0 audit): `acoustid-index` turned out to have no licence, so the hotel builds **its own fingerprint index** from AcoustID's data dumps (CC BY-SA 3.0, daily incremental JSON from data.acoustid.org, fingerprints included) and matches with Chromaprint (MIT/LGPL-2.1). See `docs/licensing/ninjam-audit.md`.
 - **A7. External services that cannot be self-built**, each behind an interface and listed in `docs/external-services.md`: Stripe (payments), YouTube and Twitch APIs (destinations, not components), Let's Encrypt (ACME CA), and the signing authorities (Apple notarization, Microsoft driver attestation, Avid/PACE).
 
 ### Architecture corrections
@@ -870,10 +870,10 @@ Adapters live in `frontdesk/adapters/<iface>/<provider>`. Each adapter has a **c
 - **Libraries pipeline (works)**:
   - Checkout opt-in: the host is prompted, then each player and VJ (in the lobby, by email, and in the app), each for their own part. A per-part decision is recorded with the licence grant text version.
   - Mixdown: from consolidated stems with the **versioned mix state over time** (M3), normalized to −14 LUFS integrated (libebur128) with a −1 dBTP true-peak limit.
-  - Fingerprint: Chromaprint against the **self-hosted AcoustID index** (A6). A match goes to an admin review.
+  - Fingerprint: Chromaprint against the **hotel's own fingerprint index** built from AcoustID data (A6). A match goes to an admin review.
   - Host trims and names the track. Publishing writes `library/muzak/<track-id>/` (FLAC master, Opus 128/320 renditions, credits.json) or `library/replays/<show-id>/` (MP4 masters and the HLS ladder).
   - Withdrawal deletes the master and renditions, unlists the item, and keeps frozen credits in the catalogue as "withdrawn".
-- **AcoustID index**: a monthly **works job** rebuilds the index from the published dumps into an index file in S3. The fingerprint job memory-maps that file for lookups, so no standing server is needed.
+- **Fingerprint index**: a hotel-built index. A daily **works job** applies AcoustID's incremental dumps to an index file in S3 (CC BY-SA 3.0 attribution shown on the library's about page). The fingerprint job memory-maps that file for lookups, so no standing server is needed.
 - **Radio**: a server-side schedule of renditions (no task). Clients fetch the "now" position from `/api/radio/now` and play the rendition URLs with purpose ambient. Picking a track switches to chosen.
 - **Night porter** (`job:night-porter`, nightly):
   - For each master in `media_objects`, it computes the target tier from `last_chosen_at` (or the room's end, for unpublished material) and the thresholds in `settings`.

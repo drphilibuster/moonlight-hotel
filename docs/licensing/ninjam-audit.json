@@ -1,0 +1,3868 @@
+{
+  "roots": [
+    "ninjam/upstream"
+  ],
+  "allowed": [
+    "AGPL-3.0-or-later",
+    "Apache-2.0",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "BSL-1.0",
+    "CC0-1.0",
+    "GPL-2.0-or-later",
+    "GPL-3.0-only",
+    "GPL-3.0-or-later",
+    "IJG",
+    "ISC",
+    "LGPL-2.0-or-later",
+    "LGPL-2.1-only",
+    "LGPL-2.1-or-later",
+    "LGPL-3.0-or-later",
+    "Libpng",
+    "LicenseRef-PublicDomain",
+    "MIT",
+    "Unlicense",
+    "Zlib",
+    "libpng-2.0"
+  ],
+  "summary": {
+    "NONE": 243,
+    "Zlib": 167,
+    "IJG": 57,
+    "libpng-2.0": 24,
+    "BINARY": 16,
+    "GPL-2.0-or-later": 11,
+    "MIT": 5,
+    "BSD-2-Clause": 3,
+    "LGPL-2.0-or-later": 1
+  },
+  "targets": {
+    "ninjamsrv": {
+      "description": "The hotel server, built from upstream's ninjam/server (OBJS in its Makefile).",
+      "files": 34,
+      "licences": {
+        "Zlib": 27,
+        "GPL-2.0-or-later": 7
+      },
+      "failures": []
+    },
+    "njclient-core": {
+      "description": "The client engine shared by the plugin, the Moonlight app, mixbot and moonlight-bot.",
+      "files": 39,
+      "licences": {
+        "Zlib": 33,
+        "GPL-2.0-or-later": 6
+      },
+      "failures": []
+    }
+  },
+  "files": [
+    {
+      "path": "ninjam/upstream/.gitattributes",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/LICENSE",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/README",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/.gitattributes",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/MersenneTwister.h",
+      "licence": "BSD-2-Clause",
+      "source": "notice",
+      "evidence": "redistribution and use in source and binary forms",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/adpcm_decode.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/adpcm_encode.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/assocarray.h",
+      "licence": "Zlib",
+      "source": "resolution",
+      "evidence": "Cockos states that WDL as a whole is distributed under its zlib-style licence (https://www.cockos.com/wdl/, retrieved 2026-10-18), and every WDL file that carries a notice carries that licence. These files are WDL's own (not one of the bundled third-party libraries) and carry no notice of their own.",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/audiobuffercontainer.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/audiobuffercontainer.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/bitfield.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/chunkalloc.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/circbuf.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/cmath/bessel_polynomial.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/cmath/complex_number.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/cmath/custom_math.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/cmath/durand_kerner.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/cmath/factorial.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/cmath/horner.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/cmath/test_bessel.c",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/cmath/test_eval.c",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/convoengine.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/convoengine.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/coreaudio_channel_formats.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/db2val.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/delay_line.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/denormal.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/destroycheck.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/diffcalc.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/dirscan.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/.gitignore",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/Makefile",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/a2i.php",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/asm-nseel-aarch64-gcc.c",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/asm-nseel-aarch64-msvc.asm",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/asm-nseel-arm-gcc.c",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/asm-nseel-arm64ec.asm",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/asm-nseel-arm64ec.obj",
+      "licence": "BINARY",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/asm-nseel-multi-macho.o",
+      "licence": "BINARY",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/asm-nseel-ppc-gcc.c",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/asm-nseel-x64-macho.o",
+      "licence": "BINARY",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/asm-nseel-x64-sse.asm",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/asm-nseel-x64.obj",
+      "licence": "BINARY",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/asm-nseel-x86-gcc.c",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/asm-nseel-x86-msvc.c",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/eel2.l",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/eel2.vim",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/eel2.y",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/eel_atomic.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/eel_eval.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/eel_fft.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/eel_files.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/eel_import.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/eel_lice.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/eel_mdct.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/eel_misc.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/eel_net.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/eel_pp.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/eel_pproc.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/eel_strings.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/eelscript.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/glue_aarch64.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/glue_arm.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/glue_port.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/glue_ppc.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/glue_x86.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/glue_x86_64_sse.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/loose_eel.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/loose_eel.dsp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/loose_eel.dsw",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/loose_eel.sln",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/loose_eel.vcxproj",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/loose_eel.vcxproj.filters",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/makefile.vc",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/ns-eel-addfuncs.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/ns-eel-func-ref.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/ns-eel-int.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/ns-eel.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/nseel-caltab.c",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/nseel-cfunc.c",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/nseel-compiler.c",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/nseel-eval.c",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/nseel-lextab.c",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/nseel-ram.c",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/nseel-yylex.c",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/regenerate-x64-objects.sh",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/scripts/circle.eel",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/scripts/eval_test.eel",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/scripts/gfx_test.eel",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/scripts/gfx_test_defer.eel",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/scripts/gpx_edit.eel",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/scripts/httpd.eel",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/scripts/pproc_test.eel",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/scripts/sinewave_text.eel",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/scripts/space.eel",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/scripts/test_a.eel",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/scripts/test_or64.eel",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/y.tab.c",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/eel2/y.tab.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/fastqueue.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/fft.c",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/fft.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/filebrowse.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/filebrowse.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/filename.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/fileread.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/filewrite.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/fnv64.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/giflib/AUTHORS",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/giflib/COPYING",
+      "licence": "MIT",
+      "source": "notice",
+      "evidence": "permission is hereby granted, free of charge, to any person obtaining a copy",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/giflib/ChangeLog",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/giflib/DEVELOPERS",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/giflib/README",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/giflib/config.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/giflib/dgif_lib.c",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/giflib/egif_lib.c",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/giflib/gif_hash.c",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/giflib/gif_hash.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/giflib/gif_lib.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/giflib/gif_lib_private.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/giflib/gifalloc.c",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/has_strings.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/heapbuf.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/jnetlib/Makefile",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jnetlib/asyncdns.cpp",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/jnetlib/jnetlib.h",
+      "evidence": "License: see jnetlib.h",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/jnetlib/asyncdns.h",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/jnetlib/jnetlib.h",
+      "evidence": "License: see jnetlib.h",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/jnetlib/connection.cpp",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/jnetlib/jnetlib.h",
+      "evidence": "License: see jnetlib.h",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/jnetlib/connection.h",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/jnetlib/jnetlib.h",
+      "evidence": "License: see jnetlib.h",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/jnetlib/httpget.cpp",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/jnetlib/jnetlib.h",
+      "evidence": "License: see jnetlib.h",
+      "targets": [
+        "ninjamsrv"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/jnetlib/httpget.h",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/jnetlib/jnetlib.h",
+      "evidence": "License: see jnetlib.h",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/jnetlib/httpserv.cpp",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/jnetlib/jnetlib.h",
+      "evidence": "License: see jnetlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jnetlib/httpserv.h",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/jnetlib/jnetlib.h",
+      "evidence": "License: see jnetlib.h",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/jnetlib/irc_util.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jnetlib/jnetlib.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/jnetlib/listen.cpp",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/jnetlib/jnetlib.h",
+      "evidence": "License: see jnetlib.h",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/jnetlib/listen.h",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/jnetlib/jnetlib.h",
+      "evidence": "License: see jnetlib.h",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/jnetlib/netinc.h",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/jnetlib/jnetlib.h",
+      "evidence": "License: see jnetlib.h",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/jnetlib/test.cpp",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/jnetlib/jnetlib.h",
+      "evidence": "License: see jnetlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jnetlib/testbnc.cpp",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/jnetlib/jnetlib.h",
+      "evidence": "License: see jnetlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jnetlib/util.cpp",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/jnetlib/jnetlib.h",
+      "evidence": "License: see jnetlib.h",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/jnetlib/util.h",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/jnetlib/jnetlib.h",
+      "evidence": "License: see jnetlib.h",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/jnetlib/webserver.cpp",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/jnetlib/jnetlib.h",
+      "evidence": "License: see jnetlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jnetlib/webserver.h",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/jnetlib/jnetlib.h",
+      "evidence": "License: see jnetlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/README",
+      "licence": "IJG",
+      "source": "notice",
+      "evidence": "permission is hereby granted to use, copy, modify, and distribute this software (or portions thereof) for any purpose, without fee",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/example.c",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jcapimin.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jcapistd.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jccoefct.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jccolor.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jcdctmgr.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jchuff.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jchuff.h",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jcinit.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jcmainct.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jcmarker.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jcmaster.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jcomapi.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jconfig.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jcparam.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jcphuff.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jcprepct.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jcsample.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jctrans.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jdapimin.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jdapistd.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jdatadst.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jdatasrc.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jdcoefct.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jdcolor.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jdct.h",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jddctmgr.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jdhuff.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jdhuff.h",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jdinput.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jdmainct.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jdmarker.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jdmaster.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jdmerge.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jdphuff.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jdpostct.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jdsample.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jdtrans.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jerror.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jerror.h",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jfdctflt.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jfdctfst.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jfdctint.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jidctflt.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jidctfst.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jidctint.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jidctred.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jinclude.h",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jmemmgr.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jmemnobs.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jmemsys.h",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jmorecfg.h",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jpegint.h",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jpeglib.h",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jquant1.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jquant2.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jutils.c",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jpeglib/jversion.h",
+      "licence": "IJG",
+      "source": "see:ninjam/upstream/WDL/jpeglib/README",
+      "evidence": "conditions of distribution and use, see the accompanying README",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/jsonparse.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lameencdec.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lameencdec.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/CHANGES",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/LICENSE",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/README",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/png.c",
+      "licence": "libpng-2.0",
+      "source": "see:ninjam/upstream/WDL/libpng/png.h",
+      "evidence": "license in png.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/png.h",
+      "licence": "libpng-2.0",
+      "source": "notice",
+      "evidence": "png reference library license version 2",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/pngconf.h",
+      "licence": "libpng-2.0",
+      "source": "see:ninjam/upstream/WDL/libpng/png.h",
+      "evidence": "license in png.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/pngdebug.h",
+      "licence": "libpng-2.0",
+      "source": "see:ninjam/upstream/WDL/libpng/png.h",
+      "evidence": "license in png.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/pngerror.c",
+      "licence": "libpng-2.0",
+      "source": "see:ninjam/upstream/WDL/libpng/png.h",
+      "evidence": "license in png.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/pngget.c",
+      "licence": "libpng-2.0",
+      "source": "see:ninjam/upstream/WDL/libpng/png.h",
+      "evidence": "license in png.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/pnginfo.h",
+      "licence": "libpng-2.0",
+      "source": "see:ninjam/upstream/WDL/libpng/png.h",
+      "evidence": "license in png.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/pnglibconf.h",
+      "licence": "libpng-2.0",
+      "source": "see:ninjam/upstream/WDL/libpng/png.h",
+      "evidence": "license in png.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/pnglibconf.h.prebuilt",
+      "licence": "libpng-2.0",
+      "source": "see:ninjam/upstream/WDL/libpng/png.h",
+      "evidence": "license in png.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/pngmem.c",
+      "licence": "libpng-2.0",
+      "source": "see:ninjam/upstream/WDL/libpng/png.h",
+      "evidence": "license in png.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/pngpread.c",
+      "licence": "libpng-2.0",
+      "source": "see:ninjam/upstream/WDL/libpng/png.h",
+      "evidence": "license in png.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/pngpriv.h",
+      "licence": "libpng-2.0",
+      "source": "see:ninjam/upstream/WDL/libpng/png.h",
+      "evidence": "license in png.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/pngread.c",
+      "licence": "libpng-2.0",
+      "source": "see:ninjam/upstream/WDL/libpng/png.h",
+      "evidence": "license in png.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/pngrio.c",
+      "licence": "libpng-2.0",
+      "source": "see:ninjam/upstream/WDL/libpng/png.h",
+      "evidence": "license in png.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/pngrtran.c",
+      "licence": "libpng-2.0",
+      "source": "see:ninjam/upstream/WDL/libpng/png.h",
+      "evidence": "license in png.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/pngrutil.c",
+      "licence": "libpng-2.0",
+      "source": "see:ninjam/upstream/WDL/libpng/png.h",
+      "evidence": "license in png.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/pngset.c",
+      "licence": "libpng-2.0",
+      "source": "see:ninjam/upstream/WDL/libpng/png.h",
+      "evidence": "license in png.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/pngstruct.h",
+      "licence": "libpng-2.0",
+      "source": "see:ninjam/upstream/WDL/libpng/png.h",
+      "evidence": "license in png.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/pngtest.c",
+      "licence": "libpng-2.0",
+      "source": "see:ninjam/upstream/WDL/libpng/png.h",
+      "evidence": "license in png.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/pngtrans.c",
+      "licence": "libpng-2.0",
+      "source": "see:ninjam/upstream/WDL/libpng/png.h",
+      "evidence": "license in png.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/pngwio.c",
+      "licence": "libpng-2.0",
+      "source": "see:ninjam/upstream/WDL/libpng/png.h",
+      "evidence": "license in png.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/pngwrite.c",
+      "licence": "libpng-2.0",
+      "source": "see:ninjam/upstream/WDL/libpng/png.h",
+      "evidence": "license in png.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/pngwtran.c",
+      "licence": "libpng-2.0",
+      "source": "see:ninjam/upstream/WDL/libpng/png.h",
+      "evidence": "license in png.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/libpng/pngwutil.c",
+      "licence": "libpng-2.0",
+      "source": "see:ninjam/upstream/WDL/libpng/png.h",
+      "evidence": "license in png.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/curverasterbuffer.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/glew/include/GL/WGLEXT.H",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/glew/include/GL/glew.h",
+      "licence": "MIT",
+      "source": "notice",
+      "evidence": "permission is hereby granted, free of charge, to any person obtaining a copy",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/glew/include/GL/glxew.h",
+      "licence": "MIT",
+      "source": "notice",
+      "evidence": "permission is hereby granted, free of charge, to any person obtaining a copy",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/glew/include/GL/wglew.h",
+      "licence": "MIT",
+      "source": "notice",
+      "evidence": "permission is hereby granted, free of charge, to any person obtaining a copy",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/glew/src/glew.c",
+      "licence": "BSD-2-Clause",
+      "source": "notice",
+      "evidence": "redistribution and use in source and binary forms",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/glew/src/glewinfo.c",
+      "licence": "BSD-2-Clause",
+      "source": "notice",
+      "evidence": "redistribution and use in source and binary forms",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/glew/src/visualinfo.c",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice.cpp",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/lice/lice.h",
+      "evidence": "See lice.h for license",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": [
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_arc.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_bezier.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_bmp.cpp",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/lice/lice.h",
+      "evidence": "See lice.h for license",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_colorspace.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_combine.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_extended.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_gif.cpp",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/lice/lice.h",
+      "evidence": "See lice.h for license",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_gif_write.cpp",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/lice/lice.h",
+      "evidence": "See lice.h for license",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_gl_ctx.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_gl_ctx.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_glbitmap.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_glbitmap.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_ico.cpp",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/lice/lice.h",
+      "evidence": "See lice.h for license",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_image.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_import.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_jpg.cpp",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/lice/lice.h",
+      "evidence": "See lice.h for license",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_jpg_write.cpp",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/lice/lice.h",
+      "evidence": "See lice.h for license",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_lcf.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_lcf.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_line.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_lvg.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_palette.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_pcx.cpp",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/lice/lice.h",
+      "evidence": "See lice.h for license",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_png.cpp",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/lice/lice.h",
+      "evidence": "See lice.h for license",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_png_write.cpp",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/lice/lice.h",
+      "evidence": "See lice.h for license",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_texgen.cpp",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/lice/lice.h",
+      "evidence": "See lice.h for license",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_text.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_text.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/lice_textnew.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/test/.gitignore",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/test/Controller.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/test/Controller.mm",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/test/English.lproj/InfoPlist.strings",
+      "licence": "BINARY",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/test/English.lproj/MainMenu.nib/classes.nib",
+      "licence": "BINARY",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/test/English.lproj/MainMenu.nib/info.nib",
+      "licence": "BINARY",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/test/English.lproj/MainMenu.nib/keyedobjects.nib",
+      "licence": "BINARY",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/test/Info.plist",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/test/Makefile",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/test/fly.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/test/image.png",
+      "licence": "BINARY",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/test/imgs2gif.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/test/main.cpp",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/lice/lice.h",
+      "evidence": "See lice.h for license",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/test/main.ico",
+      "licence": "BINARY",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/test/main.m",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/test/resource.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/test/test.rc",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/test/test.sln",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/test/test.vcxproj",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/test/test.vcxproj.filters",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lice/test/test.xcodeproj/project.pbxproj",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/lineparse.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": [
+        "ninjamsrv"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/localize/build_sample_langpack.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/localize/langpack_edit/.gitignore",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/localize/langpack_edit/Base.lproj/MainMenu.xib",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/localize/langpack_edit/LangPackEdit-Info.plist",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/localize/langpack_edit/LangPackEdit-Prefix.pch",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/localize/langpack_edit/LangPackEdit.icns",
+      "licence": "BINARY",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/localize/langpack_edit/LangPackEdit.sln",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/localize/langpack_edit/LangPackEdit.vcxproj",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/localize/langpack_edit/LangPackEdit.vcxproj.filters",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/localize/langpack_edit/LangPackEdit.xcodeproj/project.pbxproj",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/localize/langpack_edit/Makefile",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/localize/langpack_edit/Resources/main.png",
+      "licence": "BINARY",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/localize/langpack_edit/en.lproj/Credits.rtf",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/localize/langpack_edit/en.lproj/InfoPlist.strings",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/localize/langpack_edit/icon1.ico",
+      "licence": "BINARY",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/localize/langpack_edit/langpack_edit.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/localize/langpack_edit/main.m",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/localize/langpack_edit/res.rc",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/localize/langpack_edit/resource.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/localize/localize-import.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/localize/localize-info.txt",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/localize/localize.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/localize/localize.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/localize/merge_langpacks.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/mergesort.h",
+      "licence": "Zlib",
+      "source": "resolution",
+      "evidence": "Cockos states that WDL as a whole is distributed under its zlib-style licence (https://www.cockos.com/wdl/, retrieved 2026-10-18), and every WDL file that carries a notice carries that licence. These files are WDL's own (not one of the bundled third-party libraries) and carry no notice of their own.",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/metadata.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/mp3write.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/mutex.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": [
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/pcmfmtcvt.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": [
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/plush2/pl_cam.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/plush2/pl_make.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/plush2/pl_math.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/plush2/pl_obj.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/plush2/pl_pf_tex.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/plush2/pl_putface.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/plush2/pl_read_3ds.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/plush2/pl_read_cob.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/plush2/pl_read_jaw.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/plush2/pl_spline.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/plush2/plush.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/poollist.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/projectcontext.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/projectcontext.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/prvhash/prvhash_core.h",
+      "licence": "MIT",
+      "source": "notice",
+      "evidence": "permission is hereby granted, free of charge, to any person obtaining a copy",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/ptrlist.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/ptrlist_indexed.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/queue.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/resample.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/resample.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/rng.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/rng.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/rpool.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/sc_bounce/index.html",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/sc_bounce/info.php",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/sc_bounce/stream-config.php",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/sc_bounce/stream.php",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/scsrc.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/scsrc.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/setthreadname.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/sha.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/sha.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/sharedpool.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/shm_connection.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/shm_connection.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/shm_msgreply.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/shm_msgreply.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/simple_pitchshift.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/sinewavegen.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/stringpool.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/Makefile",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/gtkimcontextsimpleseqs.h",
+      "licence": "LGPL-2.0-or-later",
+      "source": "notice",
+      "evidence": "gnu lesser general public license as published by the free software foundation either version 2 of the license, or (at your option) any later version",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/sample_project/.gitignore",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/sample_project/Base.lproj/MainMenu.xib",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/sample_project/Makefile",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/sample_project/MyApp-Info.plist",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/sample_project/MyApp-Prefix.pch",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/sample_project/MyApp.icns",
+      "licence": "BINARY",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/sample_project/MyApp.sln",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/sample_project/MyApp.vcxproj",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/sample_project/MyApp.vcxproj.filters",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/sample_project/MyApp.xcodeproj/project.pbxproj",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/sample_project/Resources/main.png",
+      "licence": "BINARY",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/sample_project/en.lproj/Credits.rtf",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/sample_project/en.lproj/InfoPlist.strings",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/sample_project/icon1.ico",
+      "licence": "BINARY",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/sample_project/main.m",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/sample_project/myapp.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/sample_project/readme.txt",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/sample_project/res.rc",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/sample_project/resource.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-appstub-generic.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-appstub.mm",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-dlg-generic.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-dlg.mm",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-dlggen.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-functions.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-gdi-generic.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-gdi-internalpool.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-gdi-lice.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-gdi.mm",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-generic-gdk.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-generic-headless.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-ini.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-internal.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-kb-generic.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-kb.mm",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-menu-generic.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-menu.mm",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-menugen.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-misc-generic.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-misc.mm",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-miscdlg-generic.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-miscdlg.mm",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-modstub-generic.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-modstub.mm",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-types.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": [
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-win32.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-wnd-generic.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell-wnd.mm",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell_resgen.php",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell_resgen.pl",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swell_resgen.sh",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swellappmain.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/swell/swellappmain.mm",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/time_precise.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/timing.c",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/timing.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/timing2.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/turtleparse.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/utf8_extended.h",
+      "licence": "Zlib",
+      "source": "resolution",
+      "evidence": "Cockos states that WDL as a whole is distributed under its zlib-style licence (https://www.cockos.com/wdl/, retrieved 2026-10-18), and every WDL file that carries a notice carries that licence. These files are WDL's own (not one of the bundled third-party libraries) and carry no notice of their own.",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/verbengine.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/vorbisencdec.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": [
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/wavwrite.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": [
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/wdl_base64.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/wdlatomic.h",
+      "licence": "Zlib",
+      "source": "resolution",
+      "evidence": "Cockos states that WDL as a whole is distributed under its zlib-style licence (https://www.cockos.com/wdl/, retrieved 2026-10-18), and every WDL file that carries a notice carries that licence. These files are WDL's own (not one of the bundled third-party libraries) and carry no notice of their own.",
+      "targets": [
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/wdlcstring.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/wdlstring.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/wdltypes.h",
+      "licence": "Zlib",
+      "source": "resolution",
+      "evidence": "Cockos states that WDL as a whole is distributed under its zlib-style licence (https://www.cockos.com/wdl/, retrieved 2026-10-18), and every WDL file that carries a notice carries that licence. These files are WDL's own (not one of the bundled third-party libraries) and carry no notice of their own.",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/wdlutf8.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/win32_curses/curses.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/win32_curses/curses_editor.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/win32_curses/curses_editor.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/win32_curses/curses_win32.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/win32_curses/eel_edit.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/win32_curses/eel_edit.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/win32_curses/test.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/win32_helpers.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/win32_hidpi.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/win32_printf.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/win32_utf8.c",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/win32_utf8.h",
+      "licence": "Zlib",
+      "source": "resolution",
+      "evidence": "Cockos states that WDL as a whole is distributed under its zlib-style licence (https://www.cockos.com/wdl/, retrieved 2026-10-18), and every WDL file that carries a notice carries that licence. These files are WDL's own (not one of the bundled third-party libraries) and carry no notice of their own.",
+      "targets": [
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/WDL/win7filedialog.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/win7filedialog.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/wingui/dlgitemborder.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/wingui/membitmap.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/wingui/richeditctrl.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/wingui/scrollbar/coolscroll.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/wingui/scrollbar/coolscroll.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/wingui/virtwnd-controls.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/wingui/virtwnd-iaccessible.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/wingui/virtwnd-iconbutton.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/wingui/virtwnd-listbox.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/wingui/virtwnd-nsaccessibility.mm",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/wingui/virtwnd-skin.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/wingui/virtwnd-slider.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/wingui/virtwnd.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/wingui/virtwnd.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/wingui/wndsize.cpp",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/wingui/wndsize.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/xmlparse.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/xmlparse_test.cpp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/xsrand.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/ChangeLog",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/MiniZip64_Changes.txt",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/MiniZip64_info.txt",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/README",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/adler32.c",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/zlib/zlib.h",
+      "evidence": "conditions of distribution and use, see copyright notice in zlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/compress.c",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/zlib/zlib.h",
+      "evidence": "conditions of distribution and use, see copyright notice in zlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/crc32.c",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/zlib/zlib.h",
+      "evidence": "conditions of distribution and use, see copyright notice in zlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/crc32.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/deflate.c",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/zlib/zlib.h",
+      "evidence": "conditions of distribution and use, see copyright notice in zlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/deflate.h",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/zlib/zlib.h",
+      "evidence": "conditions of distribution and use, see copyright notice in zlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/gzclose.c",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/zlib/zlib.h",
+      "evidence": "conditions of distribution and use, see copyright notice in zlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/gzguts.h",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/zlib/zlib.h",
+      "evidence": "conditions of distribution and use, see copyright notice in zlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/gzlib.c",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/zlib/zlib.h",
+      "evidence": "conditions of distribution and use, see copyright notice in zlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/gzread.c",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/zlib/zlib.h",
+      "evidence": "conditions of distribution and use, see copyright notice in zlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/gzwrite.c",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/zlib/zlib.h",
+      "evidence": "conditions of distribution and use, see copyright notice in zlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/infback.c",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/zlib/zlib.h",
+      "evidence": "conditions of distribution and use, see copyright notice in zlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/inffast.c",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/zlib/zlib.h",
+      "evidence": "conditions of distribution and use, see copyright notice in zlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/inffast.h",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/zlib/zlib.h",
+      "evidence": "conditions of distribution and use, see copyright notice in zlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/inffixed.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/inflate.c",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/zlib/zlib.h",
+      "evidence": "conditions of distribution and use, see copyright notice in zlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/inflate.h",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/zlib/zlib.h",
+      "evidence": "conditions of distribution and use, see copyright notice in zlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/inftrees.c",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/zlib/zlib.h",
+      "evidence": "conditions of distribution and use, see copyright notice in zlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/inftrees.h",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/zlib/zlib.h",
+      "evidence": "conditions of distribution and use, see copyright notice in zlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/ioapi.c",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/ioapi.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/trees.c",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/zlib/zlib.h",
+      "evidence": "conditions of distribution and use, see copyright notice in zlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/trees.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/uncompr.c",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/zlib/zlib.h",
+      "evidence": "conditions of distribution and use, see copyright notice in zlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/unzip.c",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/unzip.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/zconf.h",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/zlib/zlib.h",
+      "evidence": "conditions of distribution and use, see copyright notice in zlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/zip.c",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/zip.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/zlib.h",
+      "licence": "Zlib",
+      "source": "notice",
+      "evidence": "provided 'as-is', without any express or implied warranty. in no event will the authors be held liable for any damages arising from the use of this software. pe",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/zlib_import.h",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/zutil.c",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/zlib/zlib.h",
+      "evidence": "conditions of distribution and use, see copyright notice in zlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/WDL/zlib/zutil.h",
+      "licence": "Zlib",
+      "source": "see:ninjam/upstream/WDL/zlib/zlib.h",
+      "evidence": "conditions of distribution and use, see copyright notice in zlib.h",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/ninjam/autosong/Makefile",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/ninjam/autosong/autosong.cpp",
+      "licence": "GPL-2.0-or-later",
+      "source": "notice",
+      "evidence": "general public license as published by the free software foundation either version 2 of the license, or (at your option) any later version",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/ninjam/autosong/autosong.dsp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/ninjam/autosong/autosong.dsw",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/ninjam/cliplogcvt/Makefile",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/ninjam/cliplogcvt/cliplogcvt.cpp",
+      "licence": "GPL-2.0-or-later",
+      "source": "notice",
+      "evidence": "general public license as published by the free software foundation either version 2 of the license, or (at your option) any later version",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/ninjam/cliplogcvt/cliplogcvt.dsp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/ninjam/cliplogcvt/cliplogcvt.dsw",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/ninjam/mpb.cpp",
+      "licence": "GPL-2.0-or-later",
+      "source": "notice",
+      "evidence": "general public license as published by the free software foundation either version 2 of the license, or (at your option) any later version",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/ninjam/mpb.h",
+      "licence": "GPL-2.0-or-later",
+      "source": "notice",
+      "evidence": "general public license as published by the free software foundation either version 2 of the license, or (at your option) any later version",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/ninjam/netmsg.cpp",
+      "licence": "GPL-2.0-or-later",
+      "source": "notice",
+      "evidence": "general public license as published by the free software foundation either version 2 of the license, or (at your option) any later version",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/ninjam/netmsg.h",
+      "licence": "GPL-2.0-or-later",
+      "source": "notice",
+      "evidence": "general public license as published by the free software foundation either version 2 of the license, or (at your option) any later version",
+      "targets": [
+        "ninjamsrv",
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/ninjam/njclient.cpp",
+      "licence": "GPL-2.0-or-later",
+      "source": "notice",
+      "evidence": "general public license as published by the free software foundation either version 2 of the license, or (at your option) any later version",
+      "targets": [
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/ninjam/njclient.h",
+      "licence": "GPL-2.0-or-later",
+      "source": "notice",
+      "evidence": "general public license as published by the free software foundation either version 2 of the license, or (at your option) any later version",
+      "targets": [
+        "njclient-core"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/ninjam/server/Makefile",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/ninjam/server/cclicense.txt",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/ninjam/server/example.cfg",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/ninjam/server/license.txt",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/ninjam/server/ninjamserver.dsp",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/ninjam/server/ninjamserver.dsw",
+      "licence": "NONE",
+      "source": "none",
+      "evidence": "",
+      "targets": []
+    },
+    {
+      "path": "ninjam/upstream/ninjam/server/ninjamsrv.cpp",
+      "licence": "GPL-2.0-or-later",
+      "source": "notice",
+      "evidence": "general public license as published by the free software foundation either version 2 of the license, or (at your option) any later version",
+      "targets": [
+        "ninjamsrv"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/ninjam/server/usercon.cpp",
+      "licence": "GPL-2.0-or-later",
+      "source": "notice",
+      "evidence": "general public license as published by the free software foundation either version 2 of the license, or (at your option) any later version",
+      "targets": [
+        "ninjamsrv"
+      ]
+    },
+    {
+      "path": "ninjam/upstream/ninjam/server/usercon.h",
+      "licence": "GPL-2.0-or-later",
+      "source": "notice",
+      "evidence": "general public license as published by the free software foundation either version 2 of the license, or (at your option) any later version",
+      "targets": [
+        "ninjamsrv"
+      ]
+    }
+  ],
+  "passed": true
+}
