@@ -1,0 +1,36 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  licence:
+    name: Licence audit and headers
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.13"
+      - name: Unit tests
+        run: python -m unittest discover -s tools/licence-audit -p 'test_*.py' -v
+      - name: Audit third-party trees
+        run: |
+          python tools/licence-audit/audit.py \
+            --json docs/licensing/ninjam-audit.json \
+            --markdown docs/licensing/ninjam-audit.generated.md
+      - name: Committed audit report is current
+        run: |
+          if [ -n "$(git status --porcelain -- docs/licensing/)" ]; then
+            git status --short -- docs/licensing/
+            echo "::error::docs/licensing/ is out of date; run tools/licence-audit/audit.py with --json and --markdown and commit the result"
+            exit 1
+          fi
+      - name: Hotel files carry AGPL-3.0-or-later
+        run: python tools/licence-audit/headers.py

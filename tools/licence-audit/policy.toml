@@ -1,0 +1,96 @@
+# SPDX-FileCopyrightText: 2026 Moon Technologies LLC
+# SPDX-License-Identifier: AGPL-3.0-or-later
+#
+# Licence audit policy. See docs/licensing/ninjam-audit.md for the reasoning
+# behind every entry here.
+
+[audit]
+# Third-party trees to classify file by file.
+roots = ["ninjam/upstream"]
+
+[policy]
+# Licences that may be combined into a binary distributed under
+# AGPL-3.0-or-later. GPL-2.0-or-later is allowed because "or later" lets us take
+# GPLv3, and GPLv3 §13 permits combining with AGPLv3. LGPL-2.1-only is allowed
+# because LGPL-2.1 §3 lets the recipient apply GPL v2 "or any later version".
+# GPL-2.0-only, GPL-3.0-only with incompatible additions, unknown and missing
+# notices are not allowed.
+allowed = [
+  "AGPL-3.0-or-later",
+  "GPL-3.0-or-later",
+  "GPL-3.0-only",
+  "GPL-2.0-or-later",
+  "LGPL-3.0-or-later",
+  "LGPL-2.1-or-later",
+  "LGPL-2.1-only",
+  "LGPL-2.0-or-later",
+  "Apache-2.0",
+  "MIT",
+  "ISC",
+  "Zlib",
+  "Libpng",
+  "libpng-2.0",
+  "IJG",
+  "BSD-2-Clause",
+  "BSD-3-Clause",
+  "BSL-1.0",
+  "CC0-1.0",
+  "Unlicense",
+  "LicenseRef-PublicDomain",
+]
+
+# Build targets: the hotel builds these from upstream sources. The include
+# closure of the entries is what gets linked, so it is what must pass.
+# Entries mirror upstream's own build (ninjam/server/Makefile for the server;
+# njclient's link set for the client core).
+
+[[target]]
+name = "ninjamsrv"
+description = "The hotel server, built from upstream's ninjam/server (OBJS in its Makefile)."
+entries = [
+  "ninjam/upstream/WDL/jnetlib/asyncdns.cpp",
+  "ninjam/upstream/WDL/jnetlib/connection.cpp",
+  "ninjam/upstream/WDL/jnetlib/listen.cpp",
+  "ninjam/upstream/WDL/jnetlib/util.cpp",
+  "ninjam/upstream/WDL/jnetlib/httpget.cpp",
+  "ninjam/upstream/WDL/rng.cpp",
+  "ninjam/upstream/WDL/sha.cpp",
+  "ninjam/upstream/ninjam/mpb.cpp",
+  "ninjam/upstream/ninjam/netmsg.cpp",
+  "ninjam/upstream/ninjam/server/usercon.cpp",
+  "ninjam/upstream/ninjam/server/ninjamsrv.cpp",
+]
+
+[[target]]
+name = "njclient-core"
+description = "The client engine shared by the plugin, the Moonlight app, mixbot and moonlight-bot."
+entries = [
+  "ninjam/upstream/ninjam/njclient.cpp",
+  "ninjam/upstream/ninjam/mpb.cpp",
+  "ninjam/upstream/ninjam/netmsg.cpp",
+  "ninjam/upstream/WDL/jnetlib/asyncdns.cpp",
+  "ninjam/upstream/WDL/jnetlib/connection.cpp",
+  "ninjam/upstream/WDL/jnetlib/listen.cpp",
+  "ninjam/upstream/WDL/jnetlib/util.cpp",
+  "ninjam/upstream/WDL/rng.cpp",
+  "ninjam/upstream/WDL/sha.cpp",
+]
+
+# Resolutions: licences for files that carry no notice of their own, each with
+# the evidence. A resolution never overrides a notice a file states itself.
+
+[[resolution]]
+# Headerless WDL files reached by the server and client link sets.
+paths = [
+  "ninjam/upstream/WDL/assocarray.h",
+  "ninjam/upstream/WDL/mergesort.h",
+  "ninjam/upstream/WDL/utf8_extended.h",
+  "ninjam/upstream/WDL/wdltypes.h",
+  "ninjam/upstream/WDL/wdlatomic.h",
+  "ninjam/upstream/WDL/win32_utf8.h",
+]
+licence = "Zlib"
+reason = """Cockos states that WDL as a whole is distributed under its zlib-style \
+licence (https://www.cockos.com/wdl/, retrieved 2026-10-18), and every WDL file \
+that carries a notice carries that licence. These files are WDL's own (not one of \
+the bundled third-party libraries) and carry no notice of their own."""

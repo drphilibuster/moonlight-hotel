@@ -1,0 +1,41 @@
+name: cla
+
+# Runs on pull_request_target so it can comment and record signatures on pull
+# requests from forks. It never checks out or runs pull request code.
+on:
+  issue_comment:
+    types: [created]
+  pull_request_target:
+    types: [opened, closed, synchronize]
+
+permissions:
+  actions: write
+  contents: write
+  pull-requests: write
+  statuses: write
+
+jobs:
+  cla:
+    runs-on: ubuntu-24.04
+    if: >-
+      (github.event.comment.body == 'recheck' ||
+       github.event.comment.body == 'I have read the Moon Technologies LLC CLA and I hereby sign it.') ||
+      github.event_name == 'pull_request_target'
+    steps:
+      - uses: contributor-assistant/github-action@ca4a40a7d1004f18d9960b404b97e5f30a505a08 # v2.6.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          path-to-signatures: signatures/cla.json
+          path-to-document: https://github.com/drphilibuster/moonlight-hotel/blob/main/CLA.md
+          branch: cla-signatures
+          allowlist: drphilibuster,dependabot[bot],github-actions[bot]
+          custom-pr-sign-comment: I have read the Moon Technologies LLC CLA and I hereby sign it.
+          custom-notsigned-prcomment: >-
+            Thanks for your contribution. Before it can be merged, please read the
+            [Moon Technologies LLC Contributor Licence Agreement](https://github.com/drphilibuster/moonlight-hotel/blob/main/CLA.md)
+            and sign it by commenting below with the exact sentence that follows.
+            If you contribute on behalf of a company, see
+            [CLA-ENTITY.md](https://github.com/drphilibuster/moonlight-hotel/blob/main/CLA-ENTITY.md).
+          custom-allsigned-prcomment: All contributors have signed the CLA.
+          lock-pullrequest-aftermerge: false
