@@ -1,11 +1,11 @@
 name: terraform
 
+# No path filters: these are required checks on main, and a filtered workflow
+# never reports on pull requests that don't touch infra/, which would block them.
 on:
   push:
     branches: [main]
-    paths: ["infra/**", ".github/workflows/terraform.yml"]
   pull_request:
-    paths: ["infra/**", ".github/workflows/terraform.yml"]
   workflow_dispatch:
 
 permissions:
