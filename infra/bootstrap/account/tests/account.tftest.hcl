@@ -68,6 +68,16 @@ run "member_account_with_ci" {
     error_message = "CI must not be able to rewrite the cross-account admin role"
   }
   assert {
+    condition     = aws_s3_bucket_versioning.state.versioning_configuration[0].status == "Enabled"
+    error_message = "state must be versioned"
+  }
+  assert {
+    condition = (
+      one(one(aws_s3_bucket_server_side_encryption_configuration.state.rule).apply_server_side_encryption_by_default).sse_algorithm == "aws:kms"
+    )
+    error_message = "state must be encrypted with the account's KMS key"
+  }
+  assert {
     condition     = jsondecode(aws_s3_bucket_policy.state.policy).Statement[0].Condition.Bool["aws:SecureTransport"] == "false"
     error_message = "state bucket must refuse plain HTTP"
   }

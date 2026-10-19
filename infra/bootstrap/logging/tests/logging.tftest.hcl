@@ -40,6 +40,16 @@ run "org_trail" {
     error_message = "the trail must cover the whole organization, every region, with log file validation"
   }
   assert {
+    condition     = aws_s3_bucket_versioning.trail.versioning_configuration[0].status == "Enabled"
+    error_message = "trail logs must be versioned (Object Lock requires it)"
+  }
+  assert {
+    condition = (
+      one(one(aws_s3_bucket_server_side_encryption_configuration.trail.rule).apply_server_side_encryption_by_default).sse_algorithm == "aws:kms"
+    )
+    error_message = "trail logs must be encrypted with the trail key"
+  }
+  assert {
     condition     = aws_s3_bucket.trail.bucket == "mh-org-trail-333333333333" && aws_s3_bucket.trail.object_lock_enabled
     error_message = "the bucket must match the organization stage's name and have Object Lock"
   }

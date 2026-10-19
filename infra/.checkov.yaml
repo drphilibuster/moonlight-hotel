@@ -19,7 +19,6 @@ skip-check:
   - CKV2_AWS_62
   # "CloudTrail logs to CloudWatch Logs": the trail is queried from S3 (Athena)
   # when needed; streaming every event to Logs is a standing cost with no reader.
-  - CKV_AWS_252
   - CKV2_AWS_10
   # SNS topic for CloudTrail delivery: nothing subscribes.
-  - CKV_AWS_67
+  - CKV_AWS_252

@@ -35,6 +35,11 @@ resource "aws_kms_alias" "state" {
 }
 
 resource "aws_s3_bucket" "state" {
+  # Encryption and versioning are separate resources below (and asserted in
+  # tests/); checkov doesn't link them to the bucket.
+  #checkov:skip=CKV_AWS_19:SSE-KMS set by aws_s3_bucket_server_side_encryption_configuration
+  #checkov:skip=CKV_AWS_145:SSE-KMS set by aws_s3_bucket_server_side_encryption_configuration
+  #checkov:skip=CKV_AWS_21:versioning set by aws_s3_bucket_versioning
   bucket = local.state_bucket
 
   lifecycle {
