@@ -9,3 +9,7 @@ dist/
 *.tfstate.*
 crash.log
 .env
+*.tfvars
+!*.tfvars.example
+*_override.tf
+.terraform.tfstate.lock.info

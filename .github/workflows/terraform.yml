@@ -1,0 +1,66 @@
+name: terraform
+
+# No path filters: these are required checks on main, and a filtered workflow
+# never reports on pull requests that don't touch infra/, which would block them.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  TF_IN_AUTOMATION: "1"
+  TF_INPUT: "0"
+
+jobs:
+  check:
+    name: Terraform fmt, validate, test and lint
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        stack:
+          - infra/modules/core
+          - infra/bootstrap/organization
+          - infra/bootstrap/account
+          - infra/bootstrap/logging
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: hashicorp/setup-terraform@dfe3c3f87815947d99a8997f908cb6525fc44e9e # v4.0.1
+        with:
+          terraform_version: 1.16.6
+          terraform_wrapper: false
+      - name: fmt
+        run: terraform fmt -check -recursive -diff ${{ matrix.stack }}
+      - name: init
+        run: terraform -chdir=${{ matrix.stack }} init -backend=false -lockfile=readonly
+        if: matrix.stack != 'infra/modules/core'
+      - name: init (no providers)
+        run: terraform -chdir=${{ matrix.stack }} init -backend=false
+        if: matrix.stack == 'infra/modules/core'
+      - name: validate
+        run: terraform -chdir=${{ matrix.stack }} validate
+      - name: test (mocked providers, nothing reaches AWS)
+        run: terraform -chdir=${{ matrix.stack }} test
+      - uses: terraform-linters/setup-tflint@6ffdbaa3be476b3431f7275c26966ef32ff60337 # v6.3.2
+        with:
+          tflint_version: v0.64.0
+      - name: tflint
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          tflint --init --config "$GITHUB_WORKSPACE/infra/.tflint.hcl"
+          tflint --chdir=${{ matrix.stack }} --config "$GITHUB_WORKSPACE/infra/.tflint.hcl" --format compact
+
+  checkov:
+    name: Checkov
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: bridgecrewio/checkov-action@99bb2caf247dfd9f03cf984373bc6043d4e32ebf # v12.1347.0
+        with:
+          directory: infra
+          config_file: infra/.checkov.yaml
